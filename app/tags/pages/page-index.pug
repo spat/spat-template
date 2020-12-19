@@ -1,0 +1,18 @@
+page-index
+  div.s-full.f.fh
+    div
+      div.text-center
+        i.material-icons.fs128 handyman
+      h1 Hello, spat!
+
+  style(type='less').
+    :scope {
+      display: block;
+    }
+
+  script.
+    this.head = () => {
+      return {
+        title: 'Hello, spat!',
+      };
+    };
