@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "setup": "yarn",
     "build": "spat build",
     "clean": "spat clean",
     "start": "spat start",
