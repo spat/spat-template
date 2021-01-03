@@ -1,4 +1,7 @@
 import client from '.spat/modules/client';
 
 client.showSSR();
-client.start();
+
+firebase.auth().checkAuth().then((user) => {
+  client.start();
+});
