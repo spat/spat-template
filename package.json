@@ -26,7 +26,7 @@
   "dependencies": {
     "firebase": "^8.2.1",
     "jquery": "^3.5.0",
-    "meltline": "git://github.com/phi-jp/meltline.git#5e607a91f9e03b9ce198607970b4dfda2fa4dc34",
+    "meltline": "0.1.13",
     "parcel-plugin-riot-pug": "git://github.com/phi-jp/parcel-plugin-riot-pug.git#037609bc2fbb17ec3c6097f879c6d29fd5e1c256",
     "spat": "git://github.com/spat/spat.git#bc588646eae2d24175791dc8f4dedb9001590c9d"
   },
