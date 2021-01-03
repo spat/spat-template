@@ -1,4 +1,6 @@
 
+@import "~meltline/src/method.less";
+
 html, body {
   height: 100%;
 }
@@ -6,6 +8,7 @@ html, body {
 body {
   background-color: rgba(17, 64, 137, 0.05);
   font-size: 14px;
+  line-height: 1;
 }
 
 .container {
@@ -17,3 +20,11 @@ body {
 * {
   outline: none;
 }
+
+
+// 色定義
+.define-color-by-object(primary, #54a0f7);
+
+// padding, margin
+.define-padding(77);
+.define-margin(88 99);
