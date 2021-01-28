@@ -6486,7 +6486,7 @@ source-map-support@^0.4.15:
   dependencies:
     source-map "^0.5.6"
 
-source-map-support@~0.5.10, source-map-support@~0.5.12:
+source-map-support@^0.5.19, source-map-support@~0.5.10, source-map-support@~0.5.12:
   version "0.5.19"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
   integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==
@@ -6519,9 +6519,9 @@ sourcemap-codec@^1.4.1:
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
 
-"spat@git://github.com/spat/spat.git#bc588646eae2d24175791dc8f4dedb9001590c9d":
+"spat@git://github.com/spat/spat.git#177bb8f447e06a85680fd609fe31884d7414ae77":
   version "0.2.0"
-  resolved "git://github.com/spat/spat.git#bc588646eae2d24175791dc8f4dedb9001590c9d"
+  resolved "git://github.com/spat/spat.git#177bb8f447e06a85680fd609fe31884d7414ae77"
   dependencies:
     browser-or-node "^1.2.1"
     express "^4.17.1"
@@ -6536,6 +6536,7 @@ sourcemap-codec@^1.4.1:
     path-to-regexp "^6.1.0"
     pug "^2.0.4"
     riot "git://github.com/phi-jp/riot.git#4f5be4637bc7488d51774774e3d6f2b7b0f2243a"
+    source-map-support "^0.5.19"
     underscore "^1.10.2"
 
 split-string@^3.0.1, split-string@^3.0.2:
