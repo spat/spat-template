@@ -1,5 +1,22 @@
 # spat-template
 
+## setup
+
+```
+% npm run setup
+```
+
+## dev
+
+```
+$ npm run dev
+```
+
+## deploy
+
+```
+$ npm run deploy
+```
 
 ## change point
 
