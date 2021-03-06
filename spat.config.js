@@ -11,7 +11,7 @@ var config = {
     head: {
       title: 'spat template',
       description: 'frontend framework',
-      favicon: '/images/favicon.png',
+      favicon: '/favicon.ico',
       ogp: {
         site_name: 'spat',
         type: 'website',
