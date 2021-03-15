@@ -29,6 +29,7 @@ var config = {
   },
   plugins: [
     { global: '$', src: 'jquery' },
+    { global: 'dayjs', src: 'dayjs' },
     { global: 'firebase', src: '~/plugins/firebase.js' },
     { global: 'app', src: '~/scripts/app.js' },
     { src: '~/styles/main.less' },
