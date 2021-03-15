@@ -34,6 +34,11 @@ var config = {
     { global: 'app', src: '~/scripts/app.js' },
     { src: '~/styles/main.less' },
   ],
+  basic: {
+    name: 'admin',
+    pass: 'password',
+    enabled: false,
+  },
   test: {
     pages: [
       '/',
