@@ -1,5 +1,11 @@
 # spat-template
 
+## get started
+
+```
+% npx create-spat-app <project-name>
+```
+
 ## setup
 
 ```
