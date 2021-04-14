@@ -31,7 +31,7 @@
     "jquery": "^3.5.0",
     "meltline": "0.1.13",
     "parcel-plugin-riot-pug": "git://github.com/phi-jp/parcel-plugin-riot-pug.git#037609bc2fbb17ec3c6097f879c6d29fd5e1c256",
-    "spat": "git://github.com/spat/spat.git#46ccbcd06ce7eac17a3d150cfdc1c4650137733c"
+    "spat": "git://github.com/spat/spat.git#13b93dce473ffdbec0e6344baf73994e4e92ce69"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
