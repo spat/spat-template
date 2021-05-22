@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "setup": "yarn",
+    "clean": "spat clean; rm -rf node_modules yarn.lock",
     "build": "spat build",
-    "clean": "spat clean",
     "start": "spat start",
     "dev": "spat dev",
     "deploy": "npm run build; gcloud app deploy --project $npm_package_config_gae_stg gae_stg.yaml --version stg -q",
@@ -31,7 +31,7 @@
     "jquery": "^3.5.0",
     "meltline": "0.1.13",
     "parcel-plugin-riot-pug": "git://github.com/phi-jp/parcel-plugin-riot-pug.git#037609bc2fbb17ec3c6097f879c6d29fd5e1c256",
-    "spat": "git://github.com/spat/spat.git#13b93dce473ffdbec0e6344baf73994e4e92ce69"
+    "spat": "git://github.com/spat/spat.git#bcf5d21100df8ee1e7a06d182e875b77c70fc00b"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
