@@ -3,7 +3,11 @@ page-index
     div
       div.text-center
         i.material-icons.fs128 handyman
-      h1.text-primary Hello, spat!
+      h1.text-primary.mb8 Hello, spat!
+      
+      div
+        div.cursor-pointer(each='{user in users}', onclick='{onclick}')
+          div.bg-white.p8.mb4 {user.data.screen_name}
 
   style(type='less').
     :scope {
@@ -11,12 +15,20 @@ page-index
     }
 
   script.
-    this.preload = () => {
-      
+    this.preload = async () => {
+      var users = await app.store.collection('users').fetch();
+
+      return {
+        users,
+      };
     };
 
     this.head = () => {
       return {
         title: 'Hello, spat!',
       };
+    };
+
+    this.onclick = (e) => {
+      e.item.user.introduce();
     };
