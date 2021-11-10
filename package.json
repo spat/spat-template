@@ -11,6 +11,7 @@
     "deploy": "npm run build; gcloud app deploy --project $npm_package_config_gae_stg gae_stg.yaml --version stg -q",
     "browse": "gcloud app browse --project $npm_package_config_gae_stg --service default",
     "dev:prod": "NODE_ENV=production spat dev",
+    "build:prod": "NODE_ENV=production spat build",
     "deploy:prod": "npm run build:prod; gcloud app deploy --project $npm_package_config_gae_prod gae_prod.yaml --version prod -q",
     "icon": "fontcustom compile ./static/images/icons --font_name icons --output static/icons/",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,8 +31,8 @@
     "flarebase": "git://github.com/rabee-inc/flarebase.git#705f2b2e16aefd348e83d36fef09128448a84bdc",
     "jquery": "^3.5.0",
     "meltline": "0.1.13",
-    "parcel-plugin-riot-pug": "git://github.com/phi-jp/parcel-plugin-riot-pug.git#037609bc2fbb17ec3c6097f879c6d29fd5e1c256",
-    "spat": "git://github.com/spat/spat.git#9a6761567f9c58236073368dcc47d7e7303757a0"
+    "parcel-plugin-riot-pug": "https://github.com/phi-jp/parcel-plugin-riot-pug.git#037609bc2fbb17ec3c6097f879c6d29fd5e1c256",
+    "spat": "https://github.com/spat/spat.git#e3e361bbb2dab6dca22d1c854c862e6d934f84cc"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
