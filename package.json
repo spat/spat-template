@@ -28,7 +28,7 @@
   "dependencies": {
     "basic-auth": "^2.0.1",
     "dayjs": "^1.10.4",
-    "firebase": "^8.2.1",
+    "flarebase": "git://github.com/rabee-inc/flarebase.git#705f2b2e16aefd348e83d36fef09128448a84bdc",
     "jquery": "^3.5.0",
     "meltline": "0.1.13",
     "parcel-plugin-riot-pug": "https://github.com/phi-jp/parcel-plugin-riot-pug.git#037609bc2fbb17ec3c6097f879c6d29fd5e1c256",
