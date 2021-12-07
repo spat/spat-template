@@ -4,15 +4,15 @@
   "main": "index.js",
   "scripts": {
     "setup": "yarn",
-    "clean": "spat clean; rm -rf node_modules yarn.lock",
-    "build": "spat build",
+    "clean": "spat clean && rm -rf node_modules yarn.lock",
     "start": "spat start",
+    "build": "spat build",
     "dev": "spat dev",
-    "deploy": "npm run build; gcloud app deploy --project $npm_package_config_gae_stg gae_stg.yaml --version stg -q",
+    "deploy": "npm run build && gcloud app deploy --project $npm_package_config_gae_stg gae_stg.yaml --version stg -q",
     "browse": "gcloud app browse --project $npm_package_config_gae_stg --service default",
-    "dev:prod": "NODE_ENV=production spat dev",
     "build:prod": "NODE_ENV=production spat build",
-    "deploy:prod": "npm run build:prod; gcloud app deploy --project $npm_package_config_gae_prod gae_prod.yaml --version prod -q",
+    "dev:prod": "NODE_ENV=production spat dev",
+    "deploy:prod": "npm run build:prod && gcloud app deploy --project $npm_package_config_gae_prod gae_prod.yaml --version prod -q",
     "icon": "fontcustom compile ./static/images/icons --font_name icons --output static/icons/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,11 +28,12 @@
   "dependencies": {
     "basic-auth": "^2.0.1",
     "dayjs": "^1.10.4",
-    "firebase": "^8.2.1",
+    "firebase": "9.0.2",
+    "flarebase": "https://github.com/rabee-inc/flarebase.git#b254ece4962609a52fa4a3e8783bc583fcf9cfde",
     "jquery": "^3.5.0",
     "meltline": "0.1.13",
     "parcel-plugin-riot-pug": "https://github.com/phi-jp/parcel-plugin-riot-pug.git#037609bc2fbb17ec3c6097f879c6d29fd5e1c256",
-    "spat": "https://github.com/spat/spat.git#e3e361bbb2dab6dca22d1c854c862e6d934f84cc"
+    "spat": "https://github.com/spat/spat.git#ee3dbd498e15c0becbef84ae147a0090dcac0254"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
